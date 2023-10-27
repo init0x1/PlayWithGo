@@ -101,3 +101,47 @@ func main() {
 We define a `Circle` struct with a Radius field.
 We define a method, `Area()`, associated with the `Circle type`, which calculates the area of the circle.
 In the main function, we create a `Circl`e instance and call the Area method to calculate and print the circle's area.
+
+## Structures and Methods in Go
+
+A structure in Go is a user-defined type that represents a collection of fields. It is used to group data into a single unit, providing a way to organize related information. For example, you can create a structure named `Person` with fields for `name` and `age`.
+
+### Declaring a Structure
+
+To declare a structure in Go, use the `struct` keyword followed by the name of the structure and the fields enclosed in curly braces. Here's an example:
+
+```go
+type Person struct {
+    name string
+    age  int
+}
+```
+### Creating Instances of a Structure
+You can create instances of a structure using the following syntax:
+```go
+me := Person{name: "Abdelrahman", age: 22}
+```
+### Accessing Structure Fields
+To access the fields of a structure, use the dot operator `(.)` followed by the field name. For example:
+```
+fmt.Println(me.name)
+fmt.Println(me.age)
+```
+### Defining Methods for Structures
+
+we can define functions inside structures, known as methods. Methods can access and modify the fields of the structure. Here's the syntax to define a method:
+```go
+func (receiver StructureName) MethodName(parameters) (return types) {
+    // Method body
+}
+```
+```go
+// Define a method for Person that returns the full name
+func (me Person) fullName() string {
+    return me.fName + " " + me.lName
+}
+
+// Call the method me
+fmt.Println(me.fullName())
+
+```
