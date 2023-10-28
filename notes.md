@@ -50,7 +50,7 @@
 type Fahrenheit float64
 
 // Define a method for the new type
-func (f Fahrenheit) String() string {
+func (f Fahrenheit) ToFahrenheitString() string {
     return fmt.Sprintf("%g°F", f)
 }
 
