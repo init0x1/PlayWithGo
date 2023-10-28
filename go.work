@@ -5,4 +5,5 @@ use (
 	./calculator
 	./hello-world
 	./pointer
+	./unixity
 )
