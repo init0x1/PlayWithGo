@@ -18,4 +18,8 @@ func main() {
 	fmt.Println(backend.ListServices())
 	fmt.Println(pentrationTesting.ListServices())
 
+	//use ServiceInfo interface
+	fmt.Println("================   use ServiceInfo interface  ===============")
+	pentrationTesting.DisplayServiceInfo()
+
 }
