@@ -6,4 +6,5 @@ use (
 	./hello-world
 	./pointer
 	./unixity
+	./GoroutineWithChannel
 )
